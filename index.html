@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div>
+
+    <header>
+    <h1 id="title">Designing the Perfect Workspace for Developers
+    </h1>
+    <p id="description">We’re gathering insights from professionals in the tech industry to understand what makes an ideal working environment. Your input will help shape a space that maximizes productivity, creativity, and job satisfaction for developers and other tech roles. Please take a few minutes to share your preferences and experiences.    
+    </p>
+    </header>
+
+    <form id="survey-form"> 
+      <div class="form-div"> 
+        <label id="name-label" for="name">Name:</label>
+        <input id="name" type="text" name="name" class="form-input" placeholder="Enter your name" required>
+      </div>
+      <div class="form-div"> 
+        <label id="email-label" for="email">Email:</label>
+        <input id="email" type="email" name="email" class="form-input" placeholder="Enter your email" required>
+      </div>
+      <div class="form-div"> 
+        <label id="role-label" for="role">Current Role:</label>
+        <select id="role" name="role" class="form-input" required>
+          <option disabled selected value>Select current role</option>
+          <option>Developer</option>
+          <option>Designer</option>
+          <option>QA</option>
+          <option>Project Manager</option>
+          <option>Student</option>
+          <option>Other</option>       
+        </select>  
+      </div>
+      
+      <div class="form-div"> 
+        <label id="number-label" for="number">How many years have you been working in tech?</label>
+        <input id="number" type="number" name="number" class="form-input" placeholder="Years" min="1" max="120" step="1" required>
+      </div> 
+      <div class="form-div"> 
+        <label id="dropdown-label" for="dropdown">Main programming language or tech stack?</label>
+        <select id="dropdown" name="language" class="form-input" required>
+          <option disabled selected value>Select your main programming language</option>
+          <option>JavaScript</option>
+          <option>Python</option>
+          <option>Java</option>
+          <option>C++</option>
+          <option>C#</option>
+          <option>Other</option>       
+        </select>  
+      </div>
+      
+      <div class="form-div"> 
+        <p>Preferred work mode:</p>
+        <label for="remote">
+          <input id="remote" type="radio" name="mode" value="remote" class="radio" checked>Remote
+        </label>
+        <label for="hybrid">
+          <input id="hybrid" type="radio" name="mode" value="hybrid" class="radio">Hybrid
+        </label>
+        <label for="onsite">
+          <input id="onsite" type="radio" name="mode" value="on-site" class="radio">On-site
+        </label>        
+      </div>
+      <div class="form-div"> 
+        <p>What items are essential on your desk?</p>
+        <label for="extra">
+          <input id="extra" type="checkbox" name="items" value="extra-monitor" class="checkbox" >Extra monitor
+        </label>
+        <label for="key">
+          <input id="key" type="checkbox" name="items" value="mechanical-keyboard" class="checkbox">Mechanical keyboard
+        </label>
+        <label for="snacks">
+          <input id="snacks" type="checkbox" name="items" value="snacks" class="checkbox">Snacks
+        </label>
+        <label for="ergonomic-chair">
+          <input id="ergonomic-chair" type="checkbox" name="items" value="ergonomic-chair" class="checkbox">Ergonomic chair
+        </label>
+        <label for="other">
+          <input id="other" type="checkbox" name="items" value="other" class="checkbox">Other
+        </label>
+      </div>
+      <div>
+        <p>Describe your ideal workspace in a few words</p>
+        <textarea id="workspace" class="workspace" name="workspace"></textarea>
+      </div>
+      <div>
+        <p>What advice would you give a company to retain top talent?</p>
+        <textarea id="advice" class="advice" name="advice"></textarea>
+      </div>
+
+<button id="submit" type="submit" class="submit">Send</button>
+    </form>
+</body>

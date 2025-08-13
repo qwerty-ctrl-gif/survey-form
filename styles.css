@@ -1,0 +1,130 @@
+/* ===== Global Styles ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* ===== Container ===== */
+div {
+  width: 100%;
+  max-width: 700px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* ===== Header ===== */
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #222;
+}
+
+header p {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* ===== Form ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* espacio entre campos */
+}
+
+/* ===== Form Fields ===== */
+.form-div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  font-weight: 600;
+}
+
+/* Inputs, selects, textarea */
+input.form-input,
+select.form-input,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+input.form-input:focus,
+select.form-input:focus,
+textarea:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74,144,226,0.3);
+  outline: none;
+  background-color: #fff;
+}
+
+/* Textarea específico */
+textarea {
+  min-height: 120px;
+  resize: vertical;
+  background-color: #fafafa;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* ===== Radio Buttons & Checkboxes ===== */
+.form-div.radio-group label,
+.form-div.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* espacio entre input y texto */
+  margin-bottom: 6px;
+}
+
+/* ===== Button ===== */
+button.submit {
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  padding: 14px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.submit:hover {
+  background-color: #357ABD;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  div {
+    padding: 30px 20px;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+}
